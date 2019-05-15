@@ -8,7 +8,11 @@
   <% cache @products do %>
     <% @products.each do |product| %>
       <% cache product do %>
+        <% if @updated_product == product %>
+        <li class="product-highlight">
+        <% else %>  
         <li>
+        <% end %>
           <%= image_tag(product.image_url) %>
           <h2><%= product.title %></h2>
           <p>
