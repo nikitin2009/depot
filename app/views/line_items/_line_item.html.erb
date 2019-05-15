@@ -11,4 +11,11 @@
           method: :delete,
           data: { confirm: 'Are you sure?' } %>
   </td>-->
+  <td>
+    <%= button_to 'Decrement', line_item_path(line_item),
+          params: { line_item: {
+                      quantity: line_item.quantity - 1 } },
+          method: :patch,
+          remote: true %>
+  </td>
 </tr>
