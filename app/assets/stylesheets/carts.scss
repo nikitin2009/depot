@@ -38,8 +38,23 @@
     color: white;
     font-size: 1em;
     padding: 0.354em 1em;
+    &.checkout {
+      background-color: #bfb;
+      color: black;
+      font-weight: bold;
+    }
   }
   input[type="submit"]:hover {
     background-color: #992;
+    &.checkout {
+      background-color: #9d9;
+    }
+  }
+  .actions {
+    text-align: right;
+    form {
+      display: inline-block;
+      margin-left: 0.5em;
+    }
   }
 }

@@ -6,6 +6,6 @@ one:
   price: 19.99
 
 two:
-  product: two
-  cart: two
+  product: ruby
+  cart: one
   price: 29.99
